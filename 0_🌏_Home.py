@@ -45,18 +45,18 @@ st.header('Drivers')
 driver1, driver2, driver3, driver4, driver5 = st.tabs(['TIGA', 'YOH', 'JYL', 'TONG', 'XIAO'],)
 
 with driver1:
-    tiga, ae86 = Image.open('./data/driver_photos/tiga.jpg'), Image.open('./data/Others/ae86.png')
+    tiga, ae86 = Image.open('./data/driver_photos/tiga.jpg'), Image.open('./data/cars/ae86.jpeg')
     akina_1, akina_2 = Image.open('data/course/akina_01.png'), Image.open('data/course/akina_02.png')
     photo, discription, course = st.columns(3)
     
     with photo:
+        st.info('### Time Attacker of RD')
         st.image(tiga, use_column_width=True)
         
         
     with discription:
-        st.info('## The best Time Attacker of RD')
         st.success('#### **Car**:     TRUENO 3door GT-APEX(AE86)')
-        st.image(ae86,use_column_width=True)
+        st.image(ae86, use_column_width=True)
         st.markdown("####  **Discription**:\n #### `TIGA` was initially noticed by `JYL` for his awsome Akina downhill, he is one of **RD's Double ACE** and **The Time Attacker**. He was called `Takumi` due to his youngest age. Now he works in Shanghai and his spare time interest is artificial intelligence technology.")
     
     with course:
@@ -67,15 +67,15 @@ with driver1:
         
 
 with driver2:
-    yoh, cap = Image.open('./data/driver_photos/yoh.jpg'), Image.open('./data/Others/cap.png')
+    yoh, cap = Image.open('./data/driver_photos/yoh.jpg'), Image.open('./data/cars/cap.jpeg')
     irohazaka_01, irohazaka_02 = Image.open('data/course/irohazaka_01.png'), Image.open('data/course/irohazaka_02.png')
     photo, discription, course = st.columns(3)
     
     with photo:
+        st.info('### Brain of RD')
         st.image(yoh, use_column_width=True)
         
     with discription:
-        st.info('## The leader and mind of RD')
         st.success('#### **Car**: Suzuki Cappuccino')
         st.image(cap, use_column_width=True)
         st.markdown('#### **Discription**:\n #### Brain of RD. In 2009-2010, `YOH` was one of the strongest driver, famous in the D5 racing world in Mianyang. He and his red Cappuccino held the Inohazaka downhill record for a long time, `YOH` loves Go in his spare time,  he now has a cute and lovely daughter who is in primary school.')
@@ -87,15 +87,15 @@ with driver2:
         
 
 with driver3:
-    jyl, fd6 = Image.open('./data/driver_photos/jyl.jpg'), Image.open('data/Others/fd6.png')
+    jyl, fd6 = Image.open('./data/driver_photos/jyl.jpg'), Image.open('data/cars/fd6.jpeg')
     happogahara_01, happogahara_02 = Image.open('./data/course/happogahara_01.png'), Image.open('./data/course/happogahara_02.png')
     photo, discription, course = st.columns(3)
     
     with photo:
+        st.info('### Battler of RD')
         st.image(jyl, use_column_width=True)
         
     with discription:
-        st.info('## The best battler of RD.')
         st.success('#### **Car**: RX-7 Type RS [FD3S]')
         st.image(fd6)
         st.markdown("#### **Discription**: Frontier of initial D in Mianyang, has been recognized as the strongest character for a long time. `JYL` is good at against game in compound courses. As the first member who take the field, he won two important races at happogahara in Chengdu in the 5v5 against game.")
