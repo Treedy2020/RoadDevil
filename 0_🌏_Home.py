@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 with st.sidebar:
-    initial_d = Image.open('/Users/cuiyaodong/Downloads/TreeDyApp/data/Others/Initial_D_Arcade_Stage_5.webp')
+    initial_d = Image.open('/data/Others/Initial_D_Arcade_Stage_5.webp')
     st.image(initial_d, caption='Initial D Arcade Stage 5', use_column_width=True)
     
 
@@ -43,7 +43,7 @@ st.header('Drivers')
 driver1, driver2, driver3, driver4, driver5 = st.tabs(['TIGA', 'YOH', 'JYL', 'TONG', 'XIAO'],)
 
 with driver1:
-    tiga = Image.open('/Users/cuiyaodong/Downloads/TreeDyApp/data/driver_photos/tiga.jpg')
+    tiga = Image.open('./data/driver_photos/tiga.jpg')
     photo, discription = st.columns(2)
     with photo:
         st.image(tiga, width=250)
@@ -55,7 +55,7 @@ with driver1:
         
 
 with driver2:
-    yoh = Image.open('/Users/cuiyaodong/Downloads/TreeDyApp/data/driver_photos/yoh.jpg')
+    yoh = Image.open('./data/driver_photos/yoh.jpg')
     photo, discription = st.columns(2)
     with photo:
         st.image(yoh, width=250)
@@ -66,7 +66,7 @@ with driver2:
         st.markdown('> **Discription**: Brain of RD. In 2009-2010, `YOH` was one of the strongest driver, famous in the D5 racing world in Mianyang. He and his red Cappuccino held the Inohazaka downhill record for a long time, `YOH` loves Go in his spare time,  he now has a cute daughter who .')
 
 with driver3:
-    jyl = Image.open('/Users/cuiyaodong/Downloads/TreeDyApp/data/driver_photos/yoh.jpg')
+    jyl = Image.open('./data/driver_photos/yoh.jpg')
     photo, discription = st.columns(2)
     with photo:
         st.image(jyl, width=250)
