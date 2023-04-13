@@ -1,8 +1,7 @@
 import pandas as pd
 import streamlit as st
 from PIL import Image
-from utils.gpt_answer import get_answer
-    
+
 st.set_page_config(
     page_title="Road Devil",
     page_icon="🏁",
