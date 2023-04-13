@@ -29,7 +29,7 @@ with title:
 
 st.header('Discription')
 
-st.markdown("### > **Road Devil** is an **Initial D Arcade Stage 5** `(an arcade racing game)` team constructed by `JYL` and `YOH`, at first there were over 30 drivers from China, Sichuan. RD now mainly refers to the small team of five drivers who  represented Mianyang to participate in an intercity challenge in 2012/07/21. they won the championship of the race against SSR team from ChengDu and become the best team of the The southwest of China. ")
+st.markdown("### > **Road Devil** is an **Initial D Arcade Stage 5** `(an arcade racing game)` team constructed by `JYL` and `YOH`, at first there were over 30 drivers from China, Sichuan. RD now mainly refers to the small team of five drivers who  represented Mianyang to participate in an intercity challenge in 2012/07/21. They won the championship of the race against SSR team from ChengDu and become the best team of the The southwest of China. ")
 
 # We could use a decorator like the next line to acceleate this
 @st.cache_data
@@ -98,16 +98,13 @@ with driver3:
         st.info('## The best battler of RD.')
         st.success('#### **Car**: RX-7 Type RS [FD3S]')
         st.image(fd6)
-        st.markdown("#### **Discription**: Frontier of initial D in Mianyang, has been recognized as the strongest character for a long time. `JYL` likes compound courses involving uphill and downhill. As the first member who take the field, he won two important races at happogahara in Chengdu in the against game.")
+        st.markdown("#### **Discription**: Frontier of initial D in Mianyang, has been recognized as the strongest character for a long time. `JYL` is good at against game in compound courses. As the first member who take the field, he won two important races at happogahara in Chengdu in the 5v5 against game.")
     
     with course:
         st.success('#### **Home Course**: 八方ヶ原 (Happogahara)')
         st.image(happogahara_01, use_column_width=True)
         st.image(happogahara_02, use_column_width=True)
         
-        
-        
-    
 
 st.header('Group Photo')
 # st.dataframe(data)
@@ -115,17 +112,15 @@ image = Image.open('./data/4drivers.jpg')
 st.image(image, caption='Tong JYL TIGA XIAO', use_column_width=True)
 
 # Advice Part
-st.header("Any advice for this page?")
-
+st.header('Any advice for us?')
 comment = st.text_area('')
 enter = st.button('Enter')
 
 if enter:
-    st.markdown('Hello, this is ChatGPT!')
-else:
-    st.write("We have gpt-3.5-turbo to be a chatbot.")
-
-
+    with open('data/comments.md', 'a') as f:
+        f.write(comment)
+        f.write('\n')
+    st.success('Thanks for your advice! We get it!')
 
 
 
