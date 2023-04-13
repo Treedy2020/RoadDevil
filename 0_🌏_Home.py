@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 with st.sidebar:
-    initial_d = Image.open('/data/Others/Initial_D_Arcade_Stage_5.webp')
+    initial_d = Image.open('./data/Others/Initial_D_Arcade_Stage_5.webp')
     st.image(initial_d, caption='Initial D Arcade Stage 5', use_column_width=True)
     
 
