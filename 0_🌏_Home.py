@@ -46,7 +46,7 @@ driver1, driver2, driver3, driver4, driver5 = st.tabs(['TIGA', 'YOH', 'JYL', 'TO
 
 with driver1:
     tiga, ae86 = Image.open('./data/driver_photos/tiga.jpg'), Image.open('./data/cars/ae86.jpeg')
-    akina_1, akina_2 = Image.open('data/course/akina_01.png'), Image.open('data/course/akina_02.png')
+    akina_1, akina_2, akina_line = Image.open('data/course/akina_01.png'), Image.open('data/course/akina_02.png'), Image.open('./data/course/akina_line.jpeg')
     photo, discription, course = st.columns(3)
     
     with photo:
@@ -61,14 +61,15 @@ with driver1:
     
     with course:
         st.success('#### **Home Course**:     秋名 (Akina)')
+        st.image(akina_line, use_column_width=True)
         st.image(akina_1, use_column_width=True)
-        st.image(akina_2, use_column_width=True)
+        # st.image(akina_2, use_column_width=True)
         
         
 
 with driver2:
     yoh, cap = Image.open('./data/driver_photos/yoh.jpg'), Image.open('./data/cars/cap.jpeg')
-    irohazaka_01, irohazaka_02 = Image.open('data/course/irohazaka_01.png'), Image.open('data/course/irohazaka_02.png')
+    irohazaka_01, irohazaka_02, irohazaka_line = Image.open('data/course/irohazaka_01.png'), Image.open('data/course/irohazaka_02.png'), Image.open('./data/course/irohazaka_line.jpeg')
     photo, discription, course = st.columns(3)
     
     with photo:
@@ -82,13 +83,14 @@ with driver2:
         
     with course:
         st.success('#### **Home Course**: いろは坂 (Irohazaka)')
+        st.image(irohazaka_line, use_column_width=True)
         st.image(irohazaka_01, use_column_width=True)
-        st.image(irohazaka_02, use_column_width=True)
+        # st.image(irohazaka_02, use_column_width=True)
         
 
 with driver3:
     jyl, fd6 = Image.open('./data/driver_photos/jyl.jpg'), Image.open('data/cars/fd6.jpeg')
-    happogahara_01, happogahara_02 = Image.open('./data/course/happogahara_01.png'), Image.open('./data/course/happogahara_02.png')
+    happogahara_01, happogahara_02, hapogahara_line= Image.open('./data/course/happogahara_01.png'), Image.open('./data/course/happogahara_02.png'), Image.open('./data/course/happogahara_line.jpeg')
     photo, discription, course = st.columns(3)
     
     with photo:
@@ -102,8 +104,9 @@ with driver3:
     
     with course:
         st.success('#### **Home Course**: 八方ヶ原 (Happogahara)')
+        st.image(hapogahara_line, use_column_width=True)
         st.image(happogahara_01, use_column_width=True)
-        st.image(happogahara_02, use_column_width=True)
+        # st.image(happogahara_02, use_column_width=True)
         
 
 st.header('Group Photo')
